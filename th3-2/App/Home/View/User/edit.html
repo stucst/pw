@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户信息管理</title>
+</head>
+<body>
+<center>
+    <include file="User/menu"/>
+    <h3>修改用户信息</h3>
+    <form action="__URL__/update" method="post">
+        <input type="hidden" name="id " value="{$vo.id}">
+        <table width="260" border="0">
+            <tr>
+                <td>账号：</td>
+                <td><input type="text" name="username" value="{$vo.username}"></td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="name" value="{$vo.name}"></td>
+            </tr>
+            <tr>
+                <td>email地址：</td>
+                <td><input type="text" name="email" value="{$vo.email}"></td>
+            </tr>
+            <tr>
+                <td>添加时间：</td>
+                <td><input type="text" name="addtime" value="{$vo.addtime}"></td>
+            </tr>
+            <tr>
+                <td>状态：</td>
+                <td><input type="text" name="state" value="{$vo.state}"></td>
+            </tr>
+            <tr>
+
+                <td colspan="2" align="center">
+                    <input type="submit"  value="修改">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</center>
+
+</body>
+</html>

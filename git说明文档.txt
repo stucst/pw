@@ -1,7 +1,7 @@
 删除：rm -rf .git
 切换到路径：cd news/
 初始化：git init
-连接项目： git remote add origin https://github.com/stucst/php_study.git
+连接项目： git remote add origin https://github.com/stucst/pw.git
 先打开：git pull origin master
 上传项目：git add .
  git commit -m "init commit"
